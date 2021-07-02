@@ -1,17 +1,17 @@
 <template>
   <div class="board flex">
-    <todolist-card text="fuck you" />
+    <todolist-board />
   </div>
 </template>
 
 <script lang="ts">
- import {Vue} from 'vue-class-component'
- import TodoListCard from '@/components/TodoListCard.vue'
- import {Options} from 'vue-property-decorator'
+ import {Vue, Options} from 'vue-property-decorator'
+
+ import TodoListBoard from '@/components/TodoListBoard.vue'
 
  @Options ({
    components: {
-     'todolist-card': TodoListCard
+     'todolist-board': TodoListBoard
    }
  })
  export default class Board extends Vue {

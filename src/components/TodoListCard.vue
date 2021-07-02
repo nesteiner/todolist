@@ -1,7 +1,9 @@
 <template>
   <div class="todolist-card flex-horizon border-radius box-shadow">
     <span class="checkbox flex-horizon center padding">
-      <input type="checkbox" :value="clicked">
+      <input type="checkbox"
+	     :value="isdone"
+	     @click="toggle">
     </span>
 
     <div class="content padding flex-horizon">
@@ -17,15 +19,19 @@
  export default class TodoListCard extends Vue {
    @Prop (String)
    text = 'hello world'
-
-   clicked: boolean = false
    
+   @Prop (Boolean)
+   isdone = false
+   
+   toggle (): void {
+     this.isdone = !this.isdone
+   }
  }
 </script>
 
 <style scoped>
  .todolist-card {
-   max-width: 200px;
+   width: 200px;
  }
 
  .flex-horizon {
@@ -47,10 +53,10 @@
  }
 
  span.padding {
-   padding: 15px 15px 15px 15px;
+   padding: 10px 10px 10px 10px;
  }
 
  div.padding {
-   padding: 15px 0 15px 0;
+   padding: 10px 0 10px 0;
  }
 </style>
