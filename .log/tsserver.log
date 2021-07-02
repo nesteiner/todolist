@@ -1,0 +1,59 @@
+Info 0    [22:56:21.371] Starting TS Server
+Info 1    [22:56:21.371] Version: 4.2.4
+Info 2    [22:56:21.371] Arguments: /usr/local/bin/node /usr/local/bin/tsserver --logFile /home/steiner/vue-ts/.log/tsserver.log --logVerbosity info --cancellationPipeName /tmp/454cd51d70813fd1fbbfbc1a9fa9f2ea/tscancellation*
+Info 3    [22:56:21.371] Platform: linux NodeVersion: 12 CaseSensitive: true
+Info 4    [22:56:21.371] ServerMode: undefined syntaxOnly: false hasUnknownServerMode: undefined
+Info 5    [22:56:21.481] Search path: /home/steiner/vue-ts/src
+Info 6    [22:56:21.482] For info: /home/steiner/vue-ts/src/main.ts :: Config file name: /home/steiner/vue-ts/tsconfig.json
+Info 7    [22:56:21.482] Opened configuration file /home/steiner/vue-ts/tsconfig.json
+Info 8    [22:56:21.500] Config: /home/steiner/vue-ts/tsconfig.json : {
+ "rootNames": [
+  "/home/steiner/vue-ts/src/main.ts",
+  "/home/steiner/vue-ts/src/shims-vue.d.ts",
+  "/home/steiner/vue-ts/src/router/index.ts"
+ ],
+ "options": {
+  "target": 1,
+  "module": 99,
+  "strict": true,
+  "jsx": 1,
+  "importHelpers": true,
+  "moduleResolution": 2,
+  "experimentalDecorators": true,
+  "allowJs": true,
+  "skipLibCheck": true,
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": true,
+  "sourceMap": true,
+  "watch": true,
+  "baseUrl": "/home/steiner/vue-ts",
+  "types": [
+   "webpack-env"
+  ],
+  "paths": {
+   "@/*": [
+    "src/*"
+   ]
+  },
+  "lib": [
+   "lib.esnext.d.ts",
+   "lib.dom.d.ts",
+   "lib.dom.iterable.d.ts",
+   "lib.scripthost.d.ts"
+  ],
+  "pathsBasePath": "/home/steiner/vue-ts",
+  "configFilePath": "/home/steiner/vue-ts/tsconfig.json"
+ }
+}
+Info 9    [22:56:21.505] Starting updateGraphWorker: Project: /home/steiner/vue-ts/tsconfig.json
+Info 10   [22:56:23.261] Finishing updateGraphWorker: Project: /home/steiner/vue-ts/tsconfig.json Version: 1 structureChanged: true Elapsed: 1756.4883003234863ms
+Info 11   [22:56:23.261] Project '/home/steiner/vue-ts/tsconfig.json' (Configured)
+Info 12   [22:56:23.261] 	Files (62)
+
+Info 13   [22:56:23.261] -----------------------------------------------
+Info 14   [22:56:23.280] Starting updateGraphWorker: Project: /dev/null/autoImportProviderProject1*
+Info 15   [22:56:23.566] Finishing updateGraphWorker: Project: /dev/null/autoImportProviderProject1* Version: 1 structureChanged: true Elapsed: 285.86547899246216ms
+Info 16   [22:56:23.566] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
+Info 17   [22:56:23.566] 	Files (21)
+
+Info 18   [22:56:23.566] -----------------------------------------------

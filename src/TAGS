@@ -1,0 +1,14 @@
+
+App.vue,0
+
+router/index.ts,140
+const routes: Array<RouteRecordRaw> = [routes4,118
+const router = createRouter({const13,216
+const router = createRouter({router13,216
+
+main.ts,0
+
+shims-vue.d.ts,63
+  const component: DefineComponent<{}, {}, any>component4,91
+
+views/Home.vue,0
