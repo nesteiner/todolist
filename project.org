@@ -9,8 +9,31 @@
 
 * 程序要求
 - 舍弃最新的 vue-property-decorator
+- *vue-class-component* and *vue-property-decorator*
 - 使用 git
 - html 样式规范
 - 试试 magit
+- hello world
 
-  
+* Note before Pragram
+** DONE magit
+C-x g 打开 magit status 后
+- 按下q 显示帮助 help
+- 按下c 显示提交 commiting
+- 按下b 显示分支 branch
+- 按下Tab 显示该节点信息，包括 diff
+** DONE Vue 规范
+- setup ??
+- 设计规范
+- typescript and axios
+- typescript declare mode
+
+
+* 程序设计
+** TodoList
+*** component
+- TodoListCard
+- TodoListPanel
+- TodoListBoard
+*** view
+show on *board* view
