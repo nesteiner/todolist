@@ -18,37 +18,40 @@
    }
  })
  export default class TodoListBoard extends Vue {
-   @Prop ()
    panels: Array<todoListPanel> = [
      {
        cards: [
-	 {isdone: false, text: 'hello'},
-	 {isdone: false, text: 'world'},
-	 {isdone: false, text: 'fuck'},
-	 {isdone: true,  text: 'you'},
-       ]
+	 {isdone: false, text: 'not done'},
+	 {isdone: true, text: 'done'},
+	 {isdone: false, text: 'not done'},
+	 {isdone: true,  text: 'done'},
+       ],
+
      },
 
      {
        cards: [
-	 {isdone: false, text: 'hello'},
-	 {isdone: false, text: 'world'},
-	 {isdone: false, text: 'fuck'},
-	 {isdone: true,  text: 'you'},
-       ]
+	 {isdone: false, text: 'not done'},
+	 {isdone: true, text: 'done'},
+	 {isdone: false, text: 'not done'},
+	 {isdone: true,  text: 'done'},
+       ],
+
      },
 
      {
        cards: [
-	 {isdone: false, text: 'hello'},
-	 {isdone: false, text: 'world'},
-	 {isdone: false, text: 'fuck'},
-	 {isdone: true,  text: 'you'},
-       ]
+	 {isdone: false, text: 'not done'},
+	 {isdone: true, text: 'done'},
+	 {isdone: false, text: 'not done'},
+	 {isdone: true,  text: 'done'},
+       ],
+
      },
 
    ]
  }
+
 </script>
 
 <style scoped>
@@ -61,4 +64,5 @@
  .wrapper {
    margin: 0 3px 0 3px;
  }
+
 </style>

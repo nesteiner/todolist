@@ -1,12 +1,10 @@
 <template>
   <div class="todolist-card flex-horizon border-radius box-shadow">
-    <span class="checkbox flex-horizon center padding">
-      <input type="checkbox"
-	     :value="isdone"
-	     @click="toggle">
+    <span class="checkbox center padding">
+      <input type="checkbox" :checked="isdone" @click="click"/>
     </span>
 
-    <div class="content padding flex-horizon">
+    <div class="content padding flex">
       {{ text }}
     </div>
   </div>
@@ -14,18 +12,19 @@
 
 <script lang="ts">
  import {Vue} from 'vue-class-component'
- import {Prop} from 'vue-property-decorator'
+ import {Prop, Model} from 'vue-property-decorator'
 
  export default class TodoListCard extends Vue {
-   @Prop (String)
+   @Prop(String)
    text = 'hello world'
-   
-   @Prop (Boolean)
+
+   @Prop()
    isdone = false
-   
-   toggle (): void {
-     this.isdone = !this.isdone
+
+   click(): void {
+     this.$emit('update:isdone', !this.isdone)
    }
+
  }
 </script>
 
@@ -34,16 +33,15 @@
    width: 200px;
  }
 
- .flex-horizon {
-   display: flex;
-   flex-direction: row;
- }
-
  .center {
+   display: flex;
    justify-content: center;
    align-items: center;
  }
- 
+
+ .flex, .flex-horizon {
+   display: flex;
+ }
  .box-shadow {
    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.5);
  }

@@ -5,16 +5,18 @@
 </template>
 
 <script lang="ts">
- import {Vue, Options} from 'vue-property-decorator'
+ import {Vue, Options, Watch} from 'vue-property-decorator'
 
+ import TodoListPanel from '@/components/TodoListPanel.vue'
  import TodoListBoard from '@/components/TodoListBoard.vue'
 
  @Options ({
    components: {
-     'todolist-board': TodoListBoard
+     'todolist-board': TodoListBoard,
+     'todolist-panel': TodoListPanel,
    }
  })
  export default class Board extends Vue {
-
- }
+   checked = true
+}
 </script> 

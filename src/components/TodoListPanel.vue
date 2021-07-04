@@ -1,8 +1,8 @@
 <template>
   <div class="todolist-panel flex-vertical flex-start align-center">
-    <template v-for="card in cards" :key="card">
+    <template v-for="(card, index) in cards" :key="index">
       <div class="wrapper">
-	<todolist-card :isdone="card.isdone" :text="card.text" />
+	<todolist-card v-model:isdone="card.isdone" :text="card.text" />
       </div>
     </template>
   </div>
@@ -21,9 +21,9 @@
  export default class TodoListPanel extends Vue {
    @Prop ()
    cards: Array<todoListCard> = [
-     {isdone: false, text: 'Hello World'},
-     {isdone: false, text: 'Holy Shit'},
-     {isdone: true,  text: 'Fuck You'},
+     {isdone: false, text: 'not done'},
+     {isdone: false, text: 'not done'},
+     {isdone: true,  text: 'done'},
    ]
  }
 </script>

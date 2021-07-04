@@ -1,14 +1,28 @@
 
 App.vue,0
 
-router/index.ts,140
-const routes: Array<RouteRecordRaw> = [routes4,118
-const router = createRouter({const13,216
-const router = createRouter({router13,216
+router/index.ts,170
+const routes: Array<RouteRecordRaw> = [routes5,156
+		path: '/Board',path13,254
+const router = createRouter({const20,316
+const router = createRouter({router20,316
 
 main.ts,0
 
-shims-vue.d.ts,63
+components/TodoListBoard.vue,0
+
+components/TodoListPanel.vue,0
+
+components/TodoListCard.vue,0
+
+shims-vue.d.ts,273
   const component: DefineComponent<{}, {}, any>component4,91
+declare interface todoListCard {todoListCard8,169
+  isdone: boolean;isdone9,202
+  text: string;text10,221
+declare interface todoListPanel {todoListPanel13,240
+  cards: Array<todoListCard>;cards14,274
 
 views/Home.vue,0
+
+views/Board.vue,0

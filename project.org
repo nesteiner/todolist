@@ -37,3 +37,62 @@ C-x g 打开 magit status 后
 - TodoListBoard
 *** view
 show on *board* view
+
+*** FIXME
+- [X] use v-model in *TodoListPanel*,
+  #+begin_src html
+    <todolist-card  v-model="isdone" :text="card.text"/>
+  #+end_src
+
+  you can use this [[https://juejin.cn/post/6844903607318511630][*tutorial*]]
+
+  - [X] try using *@Model*, at this [[https://github.com/kaorun343/vue-property-decorator/tree/v10.0.0-rc.3#Model][tutorial]], this is the latest version
+  - [X] does the method above solve the problem of *modify prop* ?
+    *Note*
+    in the parent, write code
+    #+begin_src html
+      <component v-model:prop="modelValue"/>
+    #+end_src
+    is equal to
+    #+begin_src html
+      <component :prop="modelValue"
+                 @update:prop="modelValue = $event"/>
+    #+end_src
+    
+在调用组件的页面中写好 *v-model* 后，接下来的工作是在 子组件 中写好行为即可
+#+begin_src typescript
+  handler(): void {
+    this.$emit('update:prop', prop)
+  }
+#+end_src
+
+*注意*
+不要用 *@Model* 修饰器
+- [X] 括号匹配
+  try *awesome-pair*
+
+- [X] snippet 模板设置
+  - [X] script lang=ts
+  - [X] template
+
+
+*** TODO Feature
+**** 结构改进
+- [X] center
+- [X] flex
+**** 对 card 操作
+- 增
+- 删
+- 改
+- 查
+**** 数据库存储
+
+** 好人卡爬取程序
+*** 框架
+- scrapy
+- mongodb
+- 异步下载
+*** 要点
+- cookie 带入
+- 数据库保存
+
